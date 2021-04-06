@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+echo "PS1=\"\W > \"" >> ~/.bashrc
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install git
+# git config --global user.email "you@example.com"
+git config --global user.email "afrancocedeno@gmail.com"
+# git config --global user.name "Your Name"
+git config --global user.name "Alejandro Franco Cedeño"
