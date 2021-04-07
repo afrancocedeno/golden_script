@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-echo "PS1=\"\W > \"" >> ~/.bashrc
 
 # update the advanced package tool (apt)
-sudo apt-get update
-sudo apt-get upgrade
+apt-get update
+apt-get upgrade
 
 # install git
-sudo apt install git
+apt install git
 
 # git config --global user.email "you@example.com"
 git config --global user.email "afrancocedeno@gmail.com"
@@ -14,8 +13,11 @@ git config --global user.email "afrancocedeno@gmail.com"
 # git config --global user.name "Your Name"
 git config --global user.name "Alejandro Franco Cedeño"
 
+# 
+echo "PS1=\"\W > \"" >> ~/.bashrc
+
 # g command to add, commit and push and chmod .py and .rb files
-sudo echo "
+echo "
 #!/bin/bash
 if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]]; then
     chmod +x \$1
@@ -33,4 +35,6 @@ git push
 " >> /usr/bin/g
 
 # set executable the g command
-sudo chmod +x /usr/bin/g
+chmod +x /usr/bin/g
+
+# usage: g FILE_NAME "COMMIT DESCRIPTION"
