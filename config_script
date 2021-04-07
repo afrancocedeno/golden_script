@@ -13,10 +13,14 @@ git config --global user.email "afrancocedeno@gmail.com"
 # git config --global user.name "Your Name"
 git config --global user.name "Alejandro Franco Cedeño"
 
+# clone system engineering devops repo
+git clone https://github.com/afrancocedeno/holberton-system_engineering-devops.git
+
 # 
 echo "PS1=\"\W > \"" >> ~/.bashrc
 
 # g command to add, commit and push and chmod .py and .rb files
+# usage: g FILE_NAME "COMMIT DESCRIPTION"
 echo "
 #!/bin/bash
 if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]]; then
@@ -37,7 +41,11 @@ git push
 # set executable the g command
 chmod +x /usr/bin/g
 
-# usage: g FILE_NAME "COMMIT DESCRIPTION"
+#
+# usage: ch FILE_NAME
+echo "
+#!/usr/bin/bash
+chmod u+x \$1
+" >> /usr/bin/ch
 
-# clone system engineering devops repo
-git clone https://github.com/afrancocedeno/holberton-system_engineering-devops.git
+chmod +x /usr/bin/ch
