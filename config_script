@@ -1,9 +1,26 @@
 #!/usr/bin/env bash
-echo "PS1=\"\W > \"" >> ~/.bashrc
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt install git
-# git config --global user.email "you@example.com"
-git config --global user.email "afrancocedeno@gmail.com"
-# git config --global user.name "Your Name"
-git config --global user.name "Alejandro Franco Cedeño"
+# echo "PS1=\"\W > \"" >> ~/.bashrc
+# sudo apt-get update
+# sudo apt-get upgrade
+# sudo apt install git
+# # git config --global user.email "you@example.com"
+# git config --global user.email "afrancocedeno@gmail.com"
+# # git config --global user.name "Your Name"
+# git config --global user.name "Alejandro Franco Cedeño"
+sudo echo "
+#!/bin/bash
+if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]]; then
+    chmod +x \$1
+    if [[ \$1 == *.py ]]; then
+        c=\$(pep8 \$1 | wc -l)
+        if [ \$c -ge \"1\" ]; then
+            pep8 \$1
+            exit
+        fi
+    fi
+fi
+git add \$1
+git commit -m \"\$2\"
+git push
+" >> /usr/bin/g
+sudo chmod +x /usr/bin/g
