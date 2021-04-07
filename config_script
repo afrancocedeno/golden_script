@@ -38,3 +38,6 @@ git push
 chmod +x /usr/bin/g
 
 # usage: g FILE_NAME "COMMIT DESCRIPTION"
+
+# clone system engineering devops repo
+git clone https://github.com/afrancocedeno/holberton-system_engineering-devops.git
