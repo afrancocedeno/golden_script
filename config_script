@@ -1,12 +1,20 @@
 #!/usr/bin/env bash
-# echo "PS1=\"\W > \"" >> ~/.bashrc
-# sudo apt-get update
-# sudo apt-get upgrade
-# sudo apt install git
-# # git config --global user.email "you@example.com"
-# git config --global user.email "afrancocedeno@gmail.com"
-# # git config --global user.name "Your Name"
-# git config --global user.name "Alejandro Franco Cedeño"
+echo "PS1=\"\W > \"" >> ~/.bashrc
+
+# update the advanced package tool (apt)
+sudo apt-get update
+sudo apt-get upgrade
+
+# install git
+sudo apt install git
+
+# git config --global user.email "you@example.com"
+git config --global user.email "afrancocedeno@gmail.com"
+
+# git config --global user.name "Your Name"
+git config --global user.name "Alejandro Franco Cedeño"
+
+# g command to add, commit and push and chmod .py and .rb files
 sudo echo "
 #!/bin/bash
 if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]]; then
@@ -23,4 +31,6 @@ git add \$1
 git commit -m \"\$2\"
 git push
 " >> /usr/bin/g
+
+# set executable the g command
 sudo chmod +x /usr/bin/g
