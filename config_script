@@ -23,7 +23,8 @@ echo "PS1=\"\W > \"" >> ~/.bashrc
 # usage: g FILE_NAME "COMMIT DESCRIPTION"
 echo "
 #!/bin/bash
-if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]]; then
+if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]] || grep -q \"bash\" \$1 
+then
     chmod +x \$1
     if [[ \$1 == *.py ]]; then
         c=\$(pep8 \$1 | wc -l)
