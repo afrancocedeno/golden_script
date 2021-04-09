@@ -14,10 +14,10 @@ git config --global user.email "afrancocedeno@gmail.com"
 git config --global user.name "Alejandro Franco Cedeño"
 
 # clone system engineering devops repo
-git clone https://github.com/afrancocedeno/holberton-system_engineering-devops.git
+# git clone https://github.com/afrancocedeno/holberton-system_engineering-devops.git
 
-# 
-echo "PS1=\"\W > \"" >> ~/.bashrc
+# if you want to hide the prompt
+#echo "PS1=\"\W > \"" >> ~/.bashrc
 
 # g command to add, commit and push and chmod .py and .rb files
 # usage: g FILE_NAME "COMMIT DESCRIPTION"
@@ -50,3 +50,9 @@ chmod u+x \$1
 " >> /usr/bin/ch
 
 chmod +x /usr/bin/ch
+
+#
+apt -y install python3
+
+#
+apt -y install pep8
