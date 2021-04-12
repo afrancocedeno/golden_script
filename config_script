@@ -56,3 +56,6 @@ apt -y install python3
 
 #
 apt -y install pep8
+
+#
+apt install curl
