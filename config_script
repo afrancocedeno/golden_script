@@ -55,6 +55,9 @@ chmod +x /usr/bin/ch
 apt -y install python3
 
 #
+apt install -y python3-pip
+
+#
 apt -y install pep8
 
 #
