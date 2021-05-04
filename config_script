@@ -46,6 +46,9 @@ git add $1
 git commit -m "$2"
 git push" > /usr/bin/g
 
+#---------------------------------- add shellcheck ^^^
+
+
 # set executable the g command
 chmod +x /usr/bin/g
 
