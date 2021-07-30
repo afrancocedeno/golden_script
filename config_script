@@ -32,6 +32,7 @@ echo "PS1=\"\W > \"" >> ~/.bashrc
 # g command to add, commit and push and chmod .py and .rb files
 # usage: g FILE_NAME "COMMIT DESCRIPTION"
 echo "#!/bin/bash
+# try
 if [[ \$1 == *.py ]] || [[ \$1 == *.rb ]] || [[ \$1 == *.js ]] || grep -q "bash" \$1
 then
     chmod +x \$1
