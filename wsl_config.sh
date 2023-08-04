@@ -44,6 +44,7 @@ sudo apt install pipenv
 
 
 # yarn
+npm install --global yarn
 
 # bunjs
 sudo apt install unzip
