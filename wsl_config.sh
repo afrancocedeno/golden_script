@@ -49,8 +49,8 @@ curl -fsSL https://bun.sh/install | bash
 
 # install git
 sudo apt -y install git
-sudo git config --global user.name "Alejandro Franco Cedeño"
-sudo git config --global user.email "afrancocedeno@gmail.com"
+git config --global user.name "Alejandro Franco Cedeño"
+git config --global user.email "afrancocedeno@gmail.com"
 
 # update the advanced package tool (apt)
 sudo apt-get update
