@@ -6,11 +6,8 @@
 
 # # install git
 # apt -y install git
-# # git config --global user.email "you@example.com"
-# git config --global user.email "afrancocedeno@gmail.com"
-
-# # git config --global user.name "Your Name"
 # git config --global user.name "Alejandro Franco Cedeño"
+# git config --global user.email "afrancocedeno@gmail.com"
 
 # # if you want to hide the prompt
 # echo "PS1=\"\W > \"" >> ~/.bashrc
