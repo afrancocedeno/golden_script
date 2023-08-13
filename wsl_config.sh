@@ -52,6 +52,9 @@ sudo apt -y install git
 git config --global user.name "Alejandro Franco Cedeño"
 git config --global user.email "afrancocedeno@gmail.com"
 
+# nest cli
+npm install -g @nestjs/cli
+
 # update the advanced package tool (apt)
 sudo apt-get update
 sudo apt-get -y upgrade
